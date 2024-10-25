@@ -8,4 +8,4 @@ RUN npm --prefix /opt/openvidu-basic-node install
 
 WORKDIR /opt/openvidu-basic-node
 
-ENTRYPOINT [ "node", "index.js" ]
+ENTRYPOINT [ "node", "index.js" ]   
