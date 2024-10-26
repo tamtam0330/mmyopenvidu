@@ -1,4 +1,4 @@
-require("dotenv").config(!!process.env.CONFIG ? {path: process.env.CONFIG} : {});
+// require("dotenv").config(!!process.env.CONFIG ? {path: process.env.CONFIG} : {});
 var express = require("express");
 var bodyParser = require("body-parser");
 var http = require("http");
@@ -7,11 +7,11 @@ var cors = require("cors");
 var app = express();
 
 // Environment variable: PORT where the node server is listening
-var SERVER_PORT = process.env.SERVER_PORT || 5000;
+var SERVER_PORT = 5000;
 // Environment variable: URL where our OpenVidu server is listening
-var OPENVIDU_URL = process.env.OPENVIDU_URL || 'http://localhost:4443';
+var OPENVIDU_URL = 'https://maguni-game.com/';
 // Environment variable: secret shared with our OpenVidu server
-var OPENVIDU_SECRET = process.env.OPENVIDU_SECRET || 'MY_SECRET';
+var OPENVIDU_SECRET =  'MY_SECRET';
 
 // Enable CORS support
 app.use(
